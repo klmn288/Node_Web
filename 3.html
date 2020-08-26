@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>WEB1 - html</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css"> <!--style태그 파일을 불러온다-->
+</head>
+<body>
+	<h1><a href="index.html">WEB</a></h1>
+	<div id=grid>
+		<ol>
+			<li><a href="1.html">HTML</a></li>
+			<li><a href="2.html">CSS</a></li>
+			<li><a href="3.html" id=active>JavaScript</a></li>
+			<li><a href="CheckBox.html">CheckBox</a></li>
+			<li><a href="도구.html">도구</a></li>
+		</ol>
+		<div id=article>
+			<h2>JavaScript</h2>
+			<p>
+				<script>
+					document.write("이것이 JavaScript!!"); // JavaScript 주석 
+
+				</script>
+				<h5>JavaScript에 관한 설명입니다~!</h5>
+				자바스크립트는 사용자간의 상호작용을 원활하게 해줍니다.<br>
+				자바스크립트는 웹브라우저를 제어하는 기술입니다.<br>
+				웹브라우저를 제어하는 언어들은 PHP, JAVA, Python...등이 있습니다.<br>
+				Node.js는 JavaScript로 구성되어 있으면서도 웹서버를 제어할 수 있는 장점이 있다.<br>
+				Google Apps Script에서도 사용 가능<br><br>
+				<h2>객체사용법</h2>
+				var coworkers = {<br>
+					"programmer":"egoing",<br>
+					"designer":"leezche"<br>
+				};<br>
+				document.write("programmer :"+coworkers.programmer)<br><br>
+				<h2>객체반복문</h2>
+				for(var key in coworkers){     //coworkers에 있는 key의수만큼중괄호의<br>
+					document.write(key+' : '+coworkers[key]);            내용을 실행<br>
+					<br>
+				}<br>
+				<h2>프로퍼티와 메소드</h2>
+				coworkers.showAll = function(){<br>
+					for(var key in coworkers){<br>
+						document.write(key+' : '+coworkers[key]);<br>
+					<br>
+				    }<br>
+				}<br>
+				coworkers.showAll();<br>
+
+			</p>
+			<h2>목차</h2>
+			<p>
+				<ol>
+					<li><a href="https://opentutorials.org/course/743/4647">숫자와문자</a></li>
+					<li><a href="https://opentutorials.org/course/743/4673">변수</a></li>
+					<li><a href="https://opentutorials.org/course/743/4722">비교</a></li>
+					<li><a href="https://opentutorials.org/course/743/4724">조건문</a></li>
+				</ol>
+			</p>
+			<h2>간단한 메모</h2>
+			<p>
+				<ul>
+					<li>var은 Variable(변수)의 약자로 숫자나 문자등을 담을 수 있다.</li>
+					<li>주석은</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+
+</body>
+

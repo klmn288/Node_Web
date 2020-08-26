@@ -1,0 +1,54 @@
+
+/* id(#) > class(.) > tag 순으로 Selector 우선순위가 결정된다*/
+body{
+	margin:0;
+}
+#active { /**/
+	color:red;
+}
+
+.saw { /*class가 saw인 선택자에 대해 saw는 보았다라는 뜻*/
+	color:gray;
+}
+
+a { 	
+	text-decoration:none;
+}
+h1 {
+	font-size:45px;
+	text-align:center;
+	border-bottom:1px solid gray;
+	margin:0;
+	padding:20px;
+}
+ol{
+	border-right:1px solid gray;
+	width:100px;
+	margin:0;
+	padding: 20px
+
+}
+#grid {
+	display:grid;
+	grid-template-columns: 150px 1fr;
+}
+#grid ol{
+	padding-left: 30px;
+}
+
+#grid #article{
+	padding-left: 25px;
+
+}
+
+@media(max-width:550px){
+  	#grid{
+    	display: block;
+  	}
+  	ol{
+    	border-right:none;
+  	}
+  	h1 {
+    	border-bottom:none;
+  	}
+}

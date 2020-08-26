@@ -1,0 +1,29 @@
+<script>
+					document.write("이것이 JavaScript!!"); // JavaScript 주석 
+
+				</script>
+				<h5>JavaScript에 관한 설명입니다~!</h5>
+				자바스크립트는 사용자간의 상호작용을 원활하게 해줍니다.<br>
+				자바스크립트는 웹브라우저를 제어하는 기술입니다.<br>
+				웹브라우저를 제어하는 언어들은 PHP, JAVA, Python...등이 있습니다.<br>
+				Node.js는 JavaScript로 구성되어 있으면서도 웹서버를 제어할 수 있는 장점이 있다.<br>
+				Google Apps Script에서도 사용 가능<br><br>
+				<h2>객체사용법</h2>
+				var coworkers = {<br>
+					"programmer":"egoing",<br>
+					"designer":"leezche"<br>
+				};<br>
+				document.write("programmer :"+coworkers.programmer)<br><br>
+				<h2>객체반복문</h2>
+				for(var key in coworkers){     //coworkers에 있는 key의수만큼중괄호의<br>
+					document.write(key+' : '+coworkers[key]);            내용을 실행<br>
+					<br>
+				}<br>
+				<h2>프로퍼티와 메소드</h2>
+				coworkers.showAll = function(){<br>
+					for(var key in coworkers){<br>
+						document.write(key+' : '+coworkers[key]);<br>
+					<br>
+				    }<br>
+				}<br>
+				coworkers.showAll();<br>
